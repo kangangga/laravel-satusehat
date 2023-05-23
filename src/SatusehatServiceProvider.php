@@ -2,9 +2,9 @@
 
 namespace Kangangga\Satusehat;
 
+use Kangangga\Satusehat\Commands\SatusehatCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Kangangga\Satusehat\Commands\SatusehatCommand;
 
 class SatusehatServiceProvider extends PackageServiceProvider
 {
