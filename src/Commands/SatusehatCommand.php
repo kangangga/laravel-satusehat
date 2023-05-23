@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Kangangga\Satusehat\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class SatusehatCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-satusehat';
 
     public $description = 'My command';
 
