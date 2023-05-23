@@ -1,7 +1,6 @@
 # This is my package laravel-satusehat
 
-//
-[![POSTMAN](https://upload.wikimedia.org/wikipedia/commons/c/c2/Postman_%28software%29.png)](https://www.postman.com/satusehat/workspace/satusehat-public/overview)
+[[DOCS POSTMAN]](https://www.postman.com/satusehat/workspace/satusehat-public/overview)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/kangangga/laravel-satusehat.svg?style=flat-square)](https://packagist.org/packages/kangangga/laravel-satusehat)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/kangangga/laravel-satusehat/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/kangangga/laravel-satusehat/actions?query=workflow%3Arun-tests+branch%3Amain)
