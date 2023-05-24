@@ -16,7 +16,7 @@ class SatusehatServiceProvider extends PackageServiceProvider
 
     public function registeringPackage(): void
     {
-        # code...
+        // code...
     }
 
     public function packageRegistered(): void
@@ -33,11 +33,11 @@ class SatusehatServiceProvider extends PackageServiceProvider
 
     public function bootingPackage(): void
     {
-        # code...
+        // code...
     }
 
     public function packageBooted(): void
     {
-        # code...
+        // code...
     }
 }
