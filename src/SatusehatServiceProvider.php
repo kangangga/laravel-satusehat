@@ -2,7 +2,6 @@
 
 namespace Kangangga\Satusehat;
 
-use Kangangga\Satusehat\Commands\SatusehatCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -10,16 +9,35 @@ class SatusehatServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
         $package
             ->name('laravel-satusehat')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-satusehat_table')
-            ->hasCommand(SatusehatCommand::class);
+            ->hasConfigFile();
+    }
+
+    public function registeringPackage(): void
+    {
+        # code...
+    }
+
+    public function packageRegistered(): void
+    {
+        $this->app->bind(Satusehat::class, function () {
+            return new Satusehat(
+                new Config(
+                    'asd',
+                    'asdasd'
+                )
+            );
+        });
+    }
+
+    public function bootingPackage(): void
+    {
+        # code...
+    }
+
+    public function packageBooted(): void
+    {
+        # code...
     }
 }
