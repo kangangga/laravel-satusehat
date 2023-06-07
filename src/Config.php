@@ -6,11 +6,11 @@ use Kangangga\Satusehat\Exceptions\ConfigException;
 
 class Config
 {
-
     /**
      * Client ID SATUSEHAT yang diberikan kepada sesuai organisasi anda
      */
     public $client_id;
+
     /**
      * Client Secret SATUSEHAT yang diberikan kepada organisasi anda
      */
@@ -81,20 +81,20 @@ class Config
 
     /**
      * validate function
+     *
      * @throws \Kangangga\Satusehat\Exceptions\ConfigException
-     * @return void
      */
     public function validate(): void
     {
-        if (!$this->getClientId()) {
+        if (! $this->getClientId()) {
             throw new ConfigException('Client ID is not set');
         }
 
-        if (!$this->getClientSecret()) {
+        if (! $this->getClientSecret()) {
             throw new ConfigException('Client Secret is not set');
         }
 
-        if (!$this->getOrganizationId()) {
+        if (! $this->getOrganizationId()) {
             throw new ConfigException('Organization ID is not set');
         }
     }

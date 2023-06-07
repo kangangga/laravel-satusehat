@@ -15,7 +15,7 @@ class Auth
 
     public function generateToken()
     {
-        # code...
+        // code...
     }
 
     public function setGrantType($grant_type)
