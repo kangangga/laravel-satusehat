@@ -4,13 +4,20 @@ namespace Kangangga\Satusehat;
 
 class Satusehat
 {
-    public function __construct(
-        protected Config $config
-    ) {
+    protected Config $config;
+
+    public function setConfig(Config $config)
+    {
+        $this->config = $config;
     }
 
-    public function get()
+    public function getConfig()
     {
-        return $this;
+        return $this->config;
+    }
+
+    public function validateConfig()
+    {
+        $this->config->validate();
     }
 }
